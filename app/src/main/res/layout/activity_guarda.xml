@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encuesta de Superhéroes"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/nombreSupereroe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f2"
+            android:padding="5dp"
+            android:hint="Nombre del superhéroe"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/nombreReal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+
+            android:background="@drawable/f2"
+            android:hint="Nombre real" />
+
+        <EditText
+            android:id="@+id/year"
+            android:background="@drawable/f2"
+            android:hint="Year"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="DebutYear"
+            android:textColor="@color/white" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:background="#FF9800"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/planeta"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Planeta natal"
+            android:padding="5dp"
+            android:background="@drawable/f2"
+
+            />
+
+
+
+        <CheckBox
+            android:id="@+id/alient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Es un alienígena?"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/poder"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f2"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Poder (0-100)"
+          />
+
+        <EditText
+            android:id="@+id/editorial"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/f2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Editor"
+            android:textColor="@color/white"
+        />
+
+        <EditText
+            android:id="@+id/creador"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Creador"
+            android:background="@drawable/f2"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/nc"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de cómics aparecidos"
+            android:background="@drawable/f2"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/uc"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f2"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:hint="Universo cinematográfico"
+       />
+
+        <CheckBox
+            android:id="@+id/adapatacion"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Tiene adaptación cinematográfica?"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
